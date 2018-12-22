@@ -1,9 +1,3 @@
 <div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
-		<label>
-			<input class="widget-search__field" type="search" placeholder="{{ T "search_placeholder" }}" value="" name="q" aria-label="{{ T "search_placeholder" }}">
-		</label>
-		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="{{ .Site.BaseURL }}" />
-	</form>
+    <iframe class="widget-search__input" src="https://duckduckgo.com/search.html?ks=s&kd=1&kh=1&site={{ .Site.BaseURL }}&prefill=Search DuckDuckGo" style="margin:0;padding:0;" frameborder="0"></iframe>
 </div>
